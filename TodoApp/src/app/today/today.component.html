@@ -1,0 +1,31 @@
+<div>
+  <div class="container">
+    <div class="container-heading">
+      <h2>Today's Task</h2>
+    </div>
+  </div>
+  <div class="task-input">
+    
+      <div class="form-input">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Today's Task</mat-label>
+          <input #taskInput matInput type="text" placeholder="Placeholder" />
+        </mat-form-field>
+        <button
+          class="submit-btn"
+          mat-raised-button
+          (click)="addTasks(taskInput.value)"
+        >
+          Submit
+        </button>
+      </div>
+    
+  </div>
+  <div class="list-container">
+    <mat-list class="list-item">
+      @for(task of tasks;track task){
+      <mat-list-item>{{task.task}}</mat-list-item>
+      }
+    </mat-list>
+  </div>
+</div>

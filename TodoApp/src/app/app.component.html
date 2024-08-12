@@ -1,0 +1,25 @@
+<div class="main">
+  <mat-sidenav-container>
+    <mat-drawer-container class="example-container">
+      
+      <mat-drawer mode="side" opened>
+        <div class="sidebar">
+          <div class="sidebar-element">
+            <button mat-raised-button>
+              <a routerLink="today">Daily</a>
+            </button>
+            <button mat-raised-button>
+              <a routerLink="monthly">Monthly</a>
+            </button>
+          </div>
+        </div>
+      </mat-drawer>
+      <!-- Sidebar end here -->
+
+      <!-- This will load Main content of the page -->
+      <mat-drawer-content>
+        <router-outlet></router-outlet>
+      </mat-drawer-content>
+    </mat-drawer-container>
+  </mat-sidenav-container>
+</div>

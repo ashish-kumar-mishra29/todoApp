@@ -1,0 +1,30 @@
+.example-container {
+  margin: 10px;
+  border: 1px solid #555;
+  background: #eee;
+  height: 100vh;
+  width: auto;
+}
+.sidebar {
+  display: flex;
+  align-items: center; /* Vertically center the content if needed */
+  height: 100%; /* Ensure sidebar takes full height */
+  padding: 0px 50px;
+}
+
+.sidebar-element {
+  display: flex;
+  flex-direction: column; /* Ensure buttons are in a column */
+  gap: 10px; /* Space between buttons */
+}
+
+button {
+  display: flex;
+  justify-content: center; 
+  width: 100%; 
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+}

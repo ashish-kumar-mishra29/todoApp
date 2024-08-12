@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05589A00-4903-47A4-A50C-D58A39848391}|TodoAppBackend\\TodoAppBackend.csproj|c:\\users\\hp\\onedrive\\desktop\\angular practice\\todo-app\\todoappbackend\\todoappbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05589A00-4903-47A4-A50C-D58A39848391}|TodoAppBackend\\TodoAppBackend.csproj|solutionrelative:todoappbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05589A00-4903-47A4-A50C-D58A39848391}|TodoAppBackend\\TodoAppBackend.csproj|c:\\users\\hp\\onedrive\\desktop\\angular practice\\todo-app\\todoappbackend\\todoappbackend\\controllers\\todomonthlycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05589A00-4903-47A4-A50C-D58A39848391}|TodoAppBackend\\TodoAppBackend.csproj|solutionrelative:todoappbackend\\controllers\\todomonthlycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05589A00-4903-47A4-A50C-D58A39848391}|TodoAppBackend\\TodoAppBackend.csproj|c:\\users\\hp\\onedrive\\desktop\\angular practice\\todo-app\\todoappbackend\\todoappbackend\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05589A00-4903-47A4-A50C-D58A39848391}|TodoAppBackend\\TodoAppBackend.csproj|solutionrelative:todoappbackend\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "TodoAppBackend\\Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\Data\\DataContext.cs",
+              "RelativeToolTip": "TodoAppBackend\\Data\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T04:24:22.221Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\Program.cs",
+              "RelativeDocumentMoniker": "TodoAppBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\Program.cs",
+              "RelativeToolTip": "TodoAppBackend\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBMAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:03:20.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoMonthlyController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\Controllers\\TodoMonthlyController.cs",
+              "RelativeDocumentMoniker": "TodoAppBackend\\Controllers\\TodoMonthlyController.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\Controllers\\TodoMonthlyController.cs",
+              "RelativeToolTip": "TodoAppBackend\\Controllers\\TodoMonthlyController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAUwCwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:37:29.256Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
