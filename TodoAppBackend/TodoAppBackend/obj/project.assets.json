@@ -4712,11 +4712,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\TodoAppBackend.csproj",
+      "projectUniqueName": "D:\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\TodoAppBackend.csproj",
       "projectName": "TodoAppBackend",
-      "projectPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\TodoAppBackend.csproj",
+      "projectPath": "D:\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\TodoAppBackend.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\obj\\",
+      "outputPath": "D:\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

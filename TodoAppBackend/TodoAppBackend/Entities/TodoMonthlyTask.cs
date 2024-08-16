@@ -8,6 +8,6 @@ namespace TodoAppBackend.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string MonthlyTask { get; set; }
+        public required string MonthlyTask { get; set; }
     }
 }

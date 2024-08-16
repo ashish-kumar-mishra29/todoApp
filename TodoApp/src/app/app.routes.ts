@@ -3,7 +3,10 @@ import { TodayComponent } from './today/today.component';
 import { MonthlyComponent } from './monthly/monthly.component';
 
 export const routes: Routes = [
-
+  {
+    path:'',
+    component:TodayComponent
+  },
   {
     path: 'today',
     component: TodayComponent,
@@ -12,6 +15,5 @@ export const routes: Routes = [
   {
     path: 'monthly',
     component: MonthlyComponent,
-    title: 'Month',
   },
 ];

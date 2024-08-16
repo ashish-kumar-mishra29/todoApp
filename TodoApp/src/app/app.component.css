@@ -1,6 +1,5 @@
 .example-container {
   margin: 10px;
-  border: 1px solid #555;
   background: #eee;
   height: 100vh;
   width: auto;
@@ -27,4 +26,14 @@ button {
 a {
   text-decoration: none; 
   color: inherit; 
+}
+.gradient-text {
+ font-size:5rem ;
+  background: linear-gradient(#ff6ec4, #7873f5, #ff5858);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+
 }

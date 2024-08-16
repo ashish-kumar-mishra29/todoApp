@@ -4,39 +4,33 @@
       <h2>Monthly Task</h2>
     </div>
   </div>
+
   <div class="task-input">
-    <div class="form-input">
-      <mat-form-field appearance="fill">
-        <mat-label>Enter Today's Task</mat-label>
-        <input #taskInput matInput type="text" placeholder="Placeholder" />
-      </mat-form-field>
-      <button
-        class="submit-btn"
-        mat-raised-button
-        (click)="add(taskInput.value)"
-      >
-        Submit
-      </button>
-    </div>
+    <form> 
+      <div class="form-input">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Today's Task</mat-label>
+          <input #taskInput matInput type="text" placeholder="Placeholder" />
+        </mat-form-field>
+        <button
+          class="submit-btn"
+          mat-raised-button
+          (click)="addTask(taskInput.value)"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
   </div>
+
   <div class="list-container">
     <mat-list class="list-item">
-      <table>
-        <tr>
-          <th style="width:70%">Task</th>
-          <th>Complete</th>
-          <th>Delete</th>
-        </tr>
-        @for(task of list;track task){
-        <tr>
-          <td><mat-list-item>{{ task }}</mat-list-item></td>
-          <td><button mat-fab class="material-icons color_green"><mat-icon>check</mat-icon></button></td>
-          <td><button mat-fab (click)="openDialog('0ms', '0ms')" class="material-icons color_red " ><mat-icon>delete</mat-icon></button></td>
-        </tr>
+      @for(task of Task;track $index;){
         
-        
-        }
-      </table>
+      <mat-list-item>{{$index+1}}. {{ task.monthlyTask }}</mat-list-item>
+      <hr>
+      
+      }
     </mat-list>
   </div>
 </div>

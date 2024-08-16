@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="task-input">
-    
+    <form>
       <div class="form-input">
         <mat-form-field appearance="fill">
           <mat-label>Enter Today's Task</mat-label>
@@ -19,12 +19,15 @@
           Submit
         </button>
       </div>
-    
+    </form>
   </div>
   <div class="list-container">
     <mat-list class="list-item">
-      @for(task of tasks;track task){
-      <mat-list-item>{{task.task}}</mat-list-item>
+      @for(task of tasks;track $index;){
+        
+      <mat-list-item>{{$index+1}}. {{ task.task }}</mat-list-item>
+      <hr>
+      
       }
     </mat-list>
   </div>

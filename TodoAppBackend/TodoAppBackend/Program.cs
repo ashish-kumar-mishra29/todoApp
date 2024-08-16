@@ -17,18 +17,11 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("todoApp", policyBuilder =>
     {
-        policyBuilder.WithOrigins("https://localhost:7154/swagger/index.html");
-        policyBuilder.AllowAnyHeader();
-        policyBuilder.AllowAnyMethod();
-        policyBuilder.AllowCredentials();
-    });
-
-    options.AddPolicy("AngularApp", policyBuilder =>
-    {
         policyBuilder.WithOrigins("http://localhost:4200");
         policyBuilder.AllowAnyHeader();
         policyBuilder.AllowAnyMethod();
         policyBuilder.AllowCredentials();
+
     });
 });
 
@@ -49,6 +42,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseCors("todoApp");
-app.UseCors("AngularApp");
 
 app.Run();

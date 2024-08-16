@@ -13,6 +13,8 @@ import {
   MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
+import { MonthlyTaskService } from '../services/monthly-task.service';
+
 @Component({
   selector: 'app-monthly',
   standalone: true,
@@ -25,35 +27,42 @@ import {
   ],
   templateUrl: './monthly.component.html',
   styleUrl: './monthly.component.css',
-  providers: [TodoListServiceService],
 })
 export class MonthlyComponent {
-  list: string[] = [];
-  constructor(private _todoTask: TodoListServiceService) {
-    _todoTask.getTask();
+  Task : [] | any;
+  constructor(private _todoTask: MonthlyTaskService) {
+    _todoTask.getTodo().subscribe({
+      next:(data)=>{
+        console.log(data);
+        this.Task = (data)
+      },error:(error)=>{console.log(error)}
+    })
   }
 
-  add(val: any) {
-    this._todoTask.addTask(val);
-    this.list = this._todoTask.getTask();
-  }
-  readonly dialog = inject(MatDialog);
-
-  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
-    this.dialog.open(deleteDialog, {
-      width: '250px',
-      enterAnimationDuration,
-      exitAnimationDuration,
+  addTask(data:string){
+    this._todoTask.addTask(data).subscribe((task)=>{
+      console.log(task)
     });
   }
+
+
+  readonly dialog = inject(MatDialog);
+
+  // openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+  //   this.dialog.open(deleteDialog, {
+  //     width: '250px',
+  //     enterAnimationDuration,
+  //     exitAnimationDuration,
+  //   });
+  // }
 }
-@Component({
-  selector: 'dialog-animations-example-dialog',
-  templateUrl: 'deleteDialog.html',
-  standalone: true,
-  imports: [MatButtonModule, MatDialogActions, MatDialogClose, MatDialogTitle, MatDialogContent],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-})
-export class deleteDialog {
-  readonly dialogRef = inject(MatDialogRef<deleteDialog>);
-}
+// @Component({
+//   selector: 'dialog-animations-example-dialog',
+//   templateUrl: 'deleteDialog.html',
+//   standalone: true,
+//   imports: [MatButtonModule, MatDialogActions, MatDialogClose, MatDialogTitle, MatDialogContent],
+//   changeDetection: ChangeDetectionStrategy.OnPush,
+// })
+// export class deleteDialog {
+//   readonly dialogRef = inject(MatDialogRef<deleteDialog>);
+// }

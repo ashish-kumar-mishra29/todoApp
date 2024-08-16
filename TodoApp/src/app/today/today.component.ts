@@ -7,7 +7,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { DailyTaskService } from '../services/daily-task.service';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @Component({
   selector: 'app-today',
   standalone: true,
@@ -17,24 +16,26 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatListModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   templateUrl: './today.component.html',
   styleUrl: './today.component.css',
 })
-export class TodayComponent{
+export class TodayComponent {
   tasks: [] | any;
-  constructor(private todo:DailyTaskService){}
-  ngOnInit():void {
+  constructor(private todo: DailyTaskService) {
     this.todo.getTodo().subscribe({
-      next:(data:any)=>{
+      next: (data: any) => {
         console.log(data);
-        this.tasks=data;
-      }
-    })
+        this.tasks = data;
+      },
+    });
+  }
+  
+  addTasks(task: string) {
+    this.todo.addTask(task).subscribe((data) => {
+      console.log(typeof(data));
+    });
   }
 
-  addTasks(task: string) {
-      this.todo.addTask(task);
-  }
 }

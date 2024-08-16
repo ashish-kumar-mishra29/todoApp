@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pDTuwugJjZ9+E2n74R+42M9+BAkAmTJtBtWLM26bvDY9NY4/dji+tuizOPBK7w0uYwWdgNN1zOvGy+L8xdQfKQ==",
+  "dgSpecHash": "3xHgJNpA1u7oTUIAV18CsaR2zawskSyY/9l/LTa4O9NxYUgxSHXnYWR1W/OrD96K+H04wD/R78wdotnoDmI+zg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hp\\OneDrive\\Desktop\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\TodoAppBackend.csproj",
+  "projectFilePath": "D:\\Angular Practice\\Todo-App\\TodoAppBackend\\TodoAppBackend\\TodoAppBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
